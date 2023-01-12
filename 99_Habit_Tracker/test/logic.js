@@ -2,8 +2,8 @@ import { personel } from "./personelApi.js";
 
 console.log(personel.results);
 
-const box = document.querySelector(".box-container");
-box.innerHTML = personel.results
+const boxContainer = document.querySelector(".box-container");
+boxContainer.innerHTML = personel.results
   .map((person) => {
     return `
     <div class=box>

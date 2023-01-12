@@ -1,4 +1,4 @@
-const url = "https://randomuser.me/api/?results=4";
+const url = "https://randomuser.me/api/?results=40";
 
 const response = await fetch(url);
 const data = await response.json();
