@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,6 +16,8 @@ body {
 .section-title {
   text-align: center;
   text-transform: uppercase;
+  height: 6rem;
+  padding: 3rem;
 }
 .title-underline {
   background: rgb(25, 25, 179);
@@ -41,13 +44,36 @@ body {
   width: 10vw;
   margin: 2rem auto;
   background: rgba(168, 163, 187, 0.9);
-  padding: 2rem;
+
   border-radius: 0.5rem;
   overflow: hidden;
 }
 
 .personImg {
   border-radius: 50%;
+}
+
+.first-img {
+  margin: 0 auto;
+  height: calc(100vh - 10rem);
+  width: auto;
+  /* background: url("https://picsum.photos/1600/1600"); */
+  background: linear-gradient(
+      to bottom,
+      rgba(226, 193, 8, 0.5),
+      rgba(247, 2, 2, 0.507)
+    ),
+    url("https://picsum.photos/2000/2000");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  letter-spacing: 1.5rem;
+  font-weight: bold;
+  color: #e2d8d8;
+  background-attachment: fixed;
 }
 
 /* @keyframes move {

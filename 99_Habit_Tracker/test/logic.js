@@ -1,6 +1,9 @@
 import { personel } from "./personelApi.js";
+import { img } from "./getImage.js";
 
 console.log(personel.results);
+
+const firstImg = document.querySelector(".first-img");
 
 const boxContainer = document.querySelector(".box-container");
 boxContainer.innerHTML = personel.results
