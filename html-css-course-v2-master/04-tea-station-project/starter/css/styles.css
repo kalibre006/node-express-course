@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: linear-gradient(
+      rgba(237, 143, 143, 0.5),
+      rgba(237, 143, 143, 0.1)
+    ),
+    url("../images/main-bcg.jpeg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+section {
+  clear: both;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.divider {
+  height: 0.5rem;
+  width: auto;
+  background: linear-gradient(
+    to right,
+    rgba(237, 143, 143, 0.9),
+    rgb(215, 252, 5),
+    rgba(237, 143, 143, 0.9)
+  );
+}
+
+.about {
+  height: 100%;
+  background: rgb(245, 239, 239);
+}
+
+.features {
+  width: 100%;
+}
+
+.features article {
+  height: 20vh;
+  background: grey;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.features article div {
+}
+
+.features article:hover {
+  background: rgb(230, 223, 223);
+}
+
+.about-img {
+  width: 40rem;
+  outline: 5px green solid;
+  outline-offset: 2px;
+}
+.about-img img {
+  width: 100%;
+  display: block;
+}
+
+.about-img {
+  float: left;
+  margin-left: 5rem;
+}
+.about-title {
+  padding: 2rem;
+  float: left;
+}
