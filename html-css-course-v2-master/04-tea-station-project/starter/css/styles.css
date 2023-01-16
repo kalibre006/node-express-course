@@ -6,72 +6,48 @@
   box-sizing: border-box;
 }
 
-.hero {
-  background: linear-gradient(
-      rgba(237, 143, 143, 0.5),
-      rgba(237, 143, 143, 0.1)
-    ),
-    url("../images/main-bcg.jpeg");
-  background-size: cover;
-  height: 100vh;
-  background-attachment: fixed;
+:root {
+  --clr-primary: #678e3e;
+  --clr-primary-light: #beed8c;
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+  --ff-primary: "Catamaran", sans-serif;
+  --ff-secondary: "Grand Hotel", cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
 }
 
-section {
-  clear: both;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
 }
 
-.divider {
-  height: 0.5rem;
-  width: auto;
-  background: linear-gradient(
-    to right,
-    rgba(237, 143, 143, 0.9),
-    rgb(215, 252, 5),
-    rgba(237, 143, 143, 0.9)
-  );
+.material-symbols-rounded {
+  font-size: 3rem;
 }
 
-.about {
-  height: 100%;
-  background: rgb(245, 239, 239);
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%;
+  height: 100%; */
+  background: var(--clr-grey-10);
+  z-index: 1;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  /* hide navbar */
+  transform: translateX(-100%);
+  transition: var(--transition);
 }
-
-.features {
-  width: 100%;
-}
-
-.features article {
-  height: 20vh;
-  background: grey;
-  width: 25%;
-  float: left;
-  text-align: center;
-}
-.features article div {
-}
-
-.features article:hover {
-  background: rgb(230, 223, 223);
-}
-
-.about-img {
-  width: 40rem;
-  outline: 5px green solid;
-  outline-offset: 2px;
-}
-.about-img img {
-  width: 100%;
-  display: block;
-}
-
-.about-img {
-  float: left;
-  margin-left: 5rem;
-}
-.about-title {
-  padding: 2rem;
-  float: left;
+.showNav {
+  transform: translate(0);
 }
